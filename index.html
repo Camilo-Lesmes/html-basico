@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bictia 1</title>
+  <meta name="description" content="website description" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<body>
+
+  <div id="main">
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner"></div>
+      
+        <!-- insert the page content here -->
+        <h1>Hablemos de JavaScript</h1>
+        <p> <strong>JavaScript</strong>> (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,3​ basado en prototipos, imperativo, débilmente tipado y dinámico.
+
+        Se utiliza principalmente en su forma del lado del cliente (client-side), implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas4​ aunque existe una forma de JavaScript del lado del servidor (Server-side JavaScript o SSJS). Su uso en aplicaciones externas a la web, por ejemplo en documentos PDF, aplicaciones de escritorio (mayoritariamente widgets) es también significativo.</p>
+        <h2>Reproduce</h2>
+        <p>Javascript es uno de los lenguajes de programación más populares actualmente, ademas de ser una tecnología fundamental de la web, ya que todos los sitios web utilizan Javascript, aunque puede ser utilizado en otros entornos, como aplicaciones de escritorio, aplicaciones moviles, aplicaciones de servidor y mucho más.</p>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/RqQ1d1qEWlE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     
+    </div>
+    <br>
+<form id="contactForm">
+    <strong><p>Ingrese la siguiente información</p></strong>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id = "nombre" name="nombre" placeholder="Ingrese su nombre:" style="margin:0px auto; display:block;" />
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id = "apellido"  name="apellido" placeholder= "Ingrese su Apellido:" style="margin:0px auto; display:block;" />
+
+    <label for="telefono">Telefono:</label>
+   <input type="text"  id = "telefono" name="Telefono" placeholder="Ingrese su Telefono:" style="margin:0px auto; display:block;" />
+
+<br>
+    <input type="submit" id="envio="Enviar" onclick="capturar()"  style="margin:0px auto; display:block;">
+  
+  <br>
+  </form>
+
+
+
+
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p>Diseñada por &copy; Camilo Lesmes</p>
+    </div>
+  </div>
+</body>
+
+<script>
+    function capturar()
+    {
+      var nombre = ""
+      var apellido = ""
+      var telefono = ""
+      var cedula = "";
+
+      var nombre=document.getElementById("nombre").value;
+      var apellido=document.getElementById("apellido").value;
+      var telefono=document.getElementById("telefono").value;
+
+      
+      var Datos = "";
+      Datos = "nombre = "+ nombre + "\n" + "apellido = "+ apellido + "\n" +  "telefono = "+ telefono + "\n" ;
+
+      alert(Datos)
+
+    }
+    </script>
+</script>
+</html>
