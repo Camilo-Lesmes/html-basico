@@ -16,17 +16,6 @@ p
 img
 { border: 0;}
 
-h1, h2, h3, h4, h5, h6 
-{ color: #362C20;
-  letter-spacing: 0em;
-  padding: 0 0 5px 0;}
-
-h1, h2, h3
-{ font: normal 170% 'century gothic', arial;
-  margin: 0 0 15px 0;
-  padding: 15px 0 5px 0;
-  color: #000;}
-
 
   
 #banner
@@ -86,3 +75,43 @@ left: 0;
 margin: auto;
 max-width: 100%;
 max-height: 100%;
+}
+.btn{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border:orange;
+  background-color: #4299D4;
+  color: black;
+  margin: 10px 0;
+  display: inline-block;
+  transition: 0.3s;
+}
+.btn:hover{
+  transform: scale(1,2);
+  letter-spacing: 3px;
+  color: white;
+}
+
+.info{
+  background-color: #141419;
+  color: white;
+  font-size: 15px !important;
+}
+
+.info h2{
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+.infoContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.infoContent .block h3{
+  font-size: 25px;
+  margin: 5px 0 10px 0;
+}
